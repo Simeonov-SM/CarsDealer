@@ -1,0 +1,266 @@
+﻿@model CARS_DEALER.Models.Post
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Post</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.areaName.area)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.areaName.area)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coupeType.coupeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coupeType.coupeType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doorsType.doors)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doorsType.doors)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.engineType.engineType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.engineType.engineType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gearBox.gearType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gearBox.gearType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modelName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modelName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.yearOfProduct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.yearOfProduct)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kilometers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kilometers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.engineVolume)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.engineVolume)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.power)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.power)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.elWindows)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.elWindows)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.airBagsFront)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.airBagsFront)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.airBagsRear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.airBagsRear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.airBagsSide)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.airBagsSide)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bordComputer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bordComputer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clima)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.parktronic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.parktronic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ABS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ABS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.leather)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.leather)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tempomat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tempomat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GPS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GPS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LPG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LPG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EditDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EditDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+   @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

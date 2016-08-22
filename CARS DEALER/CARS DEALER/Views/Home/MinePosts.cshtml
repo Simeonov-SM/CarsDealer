@@ -1,0 +1,220 @@
+﻿@model IEnumerable<CARS_DEALER.Models.Post>
+
+@{
+    ViewBag.Title = "MinePosts";
+    Layout = "~/Views/Posts/Index.cshtml";
+}
+
+<h2>MinePosts</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.areaName.area)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Author.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coupeType.coupeType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.doorsType.doors)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.engineType.engineType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gearBox.gearType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.modelName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.yearOfProduct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.kilometers)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.engineVolume)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.power)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.elWindows)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.airBagsFront)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.airBagsRear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.airBagsSide)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bordComputer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clima)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.parktronic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ABS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.leather)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tempomat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GPS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DPF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LPG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isSold)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EditDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.areaName.area)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Author.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coupeType.coupeType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.doorsType.doors)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.engineType.engineType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gearBox.gearType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.modelName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.yearOfProduct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kilometers)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.engineVolume)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.power)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.elWindows)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.airBagsFront)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.airBagsRear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.airBagsSide)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bordComputer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clima)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.parktronic)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ABS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.leather)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tempomat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GPS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DPF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LPG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isSold)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EditDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

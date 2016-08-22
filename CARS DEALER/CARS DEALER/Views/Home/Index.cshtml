@@ -1,0 +1,65 @@
+﻿@model IEnumerable<CARS_DEALER.Models.Post>
+@{
+    ViewBag.Title = "Home Page";
+    
+        }
+
+    <div class="body-content">
+
+
+        <!--  <div style="background-image:url(/Content/road-691124_960_720.jpg);width: inherit;height:inherit">-->
+      <img style="width:100%;height:100%"class="img-responsive"src="~/Content/green-654402_960_720.jpg" alt="logo" />
+  
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Getting started</h2>
+                    <p>
+
+                    </p>
+                    <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Get more libraries</h2>
+                    <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+                    <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Web Hosting</h2>
+                    <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+                    <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+                </div>
+            </div>
+    </div>
+    
+   
+
+            @foreach (var item in Model)
+            {
+
+                     <a href="/Posts/Details/@item.Id" class="button">
+
+
+                        <span class="spanPost">
+                            @Html.DisplayFor(modelItem => item.brand_Id),
+
+                            @Html.DisplayFor(modelItem => item.modelName),
+
+                            @Html.DisplayFor(modelItem => item.engineType.engineType),
+
+                            @Html.DisplayFor(modelItem => item.areaName.area),
+
+                            @Html.DisplayFor(modelItem => item.price),
+
+
+
+                        </span>
+                        <span class="span-date">
+                            @Html.DisplayFor(modelItem => item.EditDate),
+                        </span>
+
+                         
+                    </a>
+             }
+
+    </div>
